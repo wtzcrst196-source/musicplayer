@@ -28,7 +28,7 @@ const setSong=(i)=>{
     seekbar.value=0;
     let song=songs[i];
     currentSong=i;
-    music.src=song.path;
+    music.src=song.src;
     songname.innerHTML=song.name;
     artist.innerHTML=song.artist;
     boxdisk.style.backgroundImage=`url('${song.image}')`;
